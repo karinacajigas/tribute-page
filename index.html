@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="tribute-page" content="A tribute page freeCodeCamp.org Responsive Web Design Certification">
     <title>Tribute Page</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="tribute-page"
+      content="A tribute page freeCodeCamp.org Responsive Web Design Certification"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body id="body">
-    <header>
-      <a href="#main" class="logo-mockup">Tribute Page Project</a>
-      <nav class="topnav">
-        <ul>
-          <li><a class="active" href="#main">Home</a></li>
-          <li><a href="#milestones">Milestones</a></li>
-          <li><a id="tribute-link" href="https://en.wikipedia.org/wiki/Michael_Phelps" target="_blank">Wikipedia Entry</a></li>
-          <li><a href="https://youtu.be/mDQDTPWNcQ0" target="_blank">Inspiration</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="https://www.olympic.org/michael-phelps" target="_blank">
-        <button>Visit his Olympic Page</button>
-      </a>
+    <header class="main-header">
+      <div class="main-header__logo">
+        <a href="https://karinacajigas.github.io/tribute-page/">Tribute Page</a>
+      </div>
+      <div class="main-header__nav">
+        <nav class="main-header__nav--box">
+          <ul class="main-header__nav--items">
+            <li class="main-header__nav--item">
+              <a class="active" href="#main" aria-current="true">Home</a>
+            </li>
+            <li class="main-header__nav--item">
+              <a href="#milestones">Milestones</a>
+            </li>
+            <li class="main-header__nav--item">
+              <a
+                id="tribute-link"
+                href="https://en.wikipedia.org/wiki/Michael_Phelps"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </li>
+            <li class="main-header__nav--item">
+              <a href="https://youtu.be/mDQDTPWNcQ0" target="_blank"
+                >Inspiration</a
+              >
+            </li>
+            <li class="main-header__nav--item main-header__nav--cta">
+              <a href="https://www.olympic.org/michael-phelps" target="_blank"
+                >Visit his Olympic Page</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main id="main">
       <div class="main-container">
         <h1 id="title">Michael Phelps</h1>
         <p id="subtitle">America's Golden Swimmer</p>
-      <figure>
-        <div id="img-div">
-          <img id="image" src="https://bit.ly/30BADLP" alt="Michael Phelps and his family, posing with his medals.">
-          <figcaption id="img-caption">The most decorated athlete of all times.</figcaption>
+        <div id="img-div" class="main-container__img">
+          <figure>
+            <!--- <img id="image" src="https://bit.ly/30BADLP" alt="Michael Phelps and his family, posing with his medals."> -->
+            <figcaption id="img-caption" class="main-container__img--caption">
+              The most decorated athlete of all times.
+            </figcaption>
+          </figure>
         </div>
-      </figure>
-    </div>
-      <section id="tribute-info">
-        <h2 id="milestones">Career Milestones</h2>
-        <ul>
-          <li><strong>2000</strong> - First Olympics at only 15 years old.</li>
-          <li><strong>2001</strong> - Youngest male to set a record in swimming.</li>
-          <li><strong>2004</strong> - Won his first gold medal in world time.</li>
-          <li><strong>2007</strong> - Broke five world records at the World Aquatics Championships.</li>
-          <li><strong>2008</strong> - Set an all-time Olympic record in Beijing.</li>
-          <li><strong>2012</strong> - <a href="http://www.fina.org/"><strong>FINA</strong></a> recognized Michael as the most decorated Olympian ever.</li>
-          <li><strong>2016</strong> - After coming back from retirement, having faced a DUI and even rehab, Phelps won multiple "gold medals at 31 years old, 
-            well beyond the typical peak for male swimmers". He was chosen as the American flag bearer and voted captain.</li>
+      </div>
+      <section id="tribute-info" class="tribute-info">
+        <h2 id="milestones" class="tribute-info__heading">Career Milestones</h2>
+        <ul class="tribute-info__milestones">
+          <li class="tribute-info__milestone">
+            <strong>2000</strong> - First Olympics at only 15 years old.
+          </li>
+          <li class="tribute-info__milestone">
+            <strong>2001</strong> - Youngest male to set a record in swimming.
+          </li>
+          <li class="tribute-info__milestone">
+            <strong>2004</strong> - Won his first gold medal in world time.
+          </li>
+          <li class="tribute-info__milestone">
+            <strong>2007</strong> - Broke five world records at the World
+            Aquatics Championships.
+          </li>
+          <li class="tribute-info__milestone">
+            <strong>2008</strong> - Set an all-time Olympic record in Beijing.
+          </li>
+          <li class="tribute-info__milestone">
+            <strong>2012</strong> -
+            <a href="http://www.fina.org/"><strong>FINA</strong></a> recognized
+            Michael as the most decorated Olympian ever.
+          </li>
+          <li class="tribute-info__milestone">
+            <strong>2016</strong> - After coming back from retirement, having
+            faced a DUI and even rehab, Phelps won multiple "gold medals at 31
+            years old, well beyond the typical peak for male swimmers". He was
+            chosen as the American flag bearer and voted captain.
+          </li>
         </ul>
-        <blockquote>
-          <cite="https: https://www.brainyquote.com/quotes/michael_phelps_440700</cite>
-            <p>"If you want to be the best, you have to do things that other people aren't willing to do."</p>
-            <cite>-- Michael Phelps</cite>
+        <blockquote
+          class="tribute-quote"
+          cite="https://www.brainyquote.com/quotes/michael_phelps_440700"
+        >
+          <p>
+            "If you want to be the best, you have to do things that other people
+            aren't willing to do."
+          </p>
+          <cite>-- Michael Phelps</cite>
         </blockquote>
       </section>
     </main>
-    <footer>
-      <h2>Made by <a href="https://www.linkedin.com/in/karinacajigas/" target="_blank"><button>Karina Cajigas</button></a></h2>
+    <footer class="main-footer">
+      <h2>
+        Made by
+        <a href="https://www.linkedin.com/in/karinacajigas/" target="_blank"
+          ><button>Karina Cajigas</button></a
+        >
+      </h2>
     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
-
 </html>

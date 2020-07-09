@@ -16,10 +16,14 @@ body {
   font-size: 100%;
 }
 
+html, body {
+  max-height: 100%;
+}
+
 main {
   display: block;
   background: #f9f9f9;
-  min-height: calc(100vh - 75px);
+  /*min-height: calc(100vh - 75px);*/
 }
 
 .main-header__measure {
@@ -164,6 +168,7 @@ main {
   font-style: italic;
   max-width: 545px;
   margin: 0 auto 50px auto;
+  padding: 0 20px 0 20px;
   text-align: left;
 }
 

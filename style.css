@@ -197,6 +197,7 @@ main {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .footer-container h2,

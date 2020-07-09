@@ -190,20 +190,14 @@ main {
   background: #143441;
 }
 
-.footer::after {
-  content:"";
-  display:table;
-  line-height:0;
-}
-
 .footer-container {
-  height: 75px;
   padding: 20px;
   margin: 0 auto 0 auto;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
 .footer-container h2,

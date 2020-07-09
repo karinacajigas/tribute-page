@@ -16,14 +16,9 @@ body {
   font-size: 100%;
 }
 
-html, body {
-  max-height: 100%;
-}
-
 main {
   display: block;
   background: #f9f9f9;
-  /*min-height: calc(100vh - 75px);*/
 }
 
 .main-header__measure {
@@ -220,6 +215,10 @@ a {
 }
 
 @media (min-width: 1000px) {
+  .body, html {
+    max-height: 100% !important;
+  }
+
   .main-header {
     border-bottom: 1px solid #b9b7b7;
   }

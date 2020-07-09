@@ -6,18 +6,19 @@
 
 html {
   font-size: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   border-top: 5px solid #143441;
   text-rendering: optimizeLegibility;
-  color: #0D1F21;
+  color: #0d1f21;
   font-size: 100%;
 }
 
 main {
   display: block;
+  background: #f9f9f9;
 }
 
 .main-header__measure {
@@ -29,14 +30,15 @@ main {
   margin-bottom: 20px;
   padding-left: 20px;
   line-height: 30px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 .main-header__logo a {
   text-decoration: none;
-  color: #0D1F21;
+  color: #0d1f21;
 }
 
 .main-header__nav {
@@ -59,42 +61,41 @@ main {
   font-size: 18px;
 }
 
-.main-header__nav--item a:link, 
+.main-header__nav--item a:link,
 .main-header__nav--item a:visited {
   text-decoration: none;
   display: block;
   color: #143441;
   padding: 15px 15px 15px;
-  border-bottom: 5px solid #fff;
   font-size: 1rem;
 }
 
-.main-header__nav--item a[aria-current=true] {
+.main-header__nav--item a[aria-current="true"] {
   font-weight: bold;
   color: #143441;
-  border-bottom: 5px solid #0D1F21;
+  border-bottom: 5px solid #0d1f21;
 }
 
 .main-header__nav--cta {
-  background: #EBB11A;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  background: #ebb11a;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 .heading {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background: #f9f9f9;
+  padding: 20px;
   text-align: center;
 }
 
 .heading-measure {
   max-width: 1400px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .heading-title {
@@ -117,10 +118,94 @@ main {
   display: block;
   height: auto;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 .heading-image__caption {
   margin: 15px 0 5px 0;
+}
+
+.tribute-info,
+.tribute-video {
+  padding: 20px;
+}
+
+.tribute-info__heading,
+.tribute-video__heading {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 10px 25px 25px 25px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  border-bottom: 1px solid #b9b7b7;
+  padding-bottom: 15px;
+}
+
+.tribute-info__milestones {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.5rem;
+  padding-left: 20px;
+}
+
+.tribute-info__milestone {
+  margin: 16px 0;
+  font-size: 1.1rem;
+}
+
+.tribute-quote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+
+.tribute-video__container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin: 50px auto 50px auto;
+}
+
+.tribute-video__container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.footer {
+  background: #143441;
+}
+
+.footer-container {
+  height: 75px;
+  padding: 20px;
+  margin: 0 auto 0 auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container h2,
+a {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 auto 0 auto;
+}
+
+.footer-container a {
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 1000px) {
@@ -136,18 +221,23 @@ main {
     display: table;
     clear: both;
   }
-  
+
   .main-header__logo {
     float: left;
   }
-  
+
   .main-header__nav {
     float: right;
     border: none;
   }
-  
+
   .main-header__nav--items {
     white-space: normal;
     overflow-x: initial;
+  }
+
+  .tribute-info__heading,
+  .tribute-video__heading {
+    margin: 10px 305px 25px 305px;
   }
 }

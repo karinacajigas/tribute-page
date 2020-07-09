@@ -190,6 +190,12 @@ main {
   background: #143441;
 }
 
+.footer::after {
+  content:"";
+  display:table;
+  line-height:0;
+}
+
 .footer-container {
   height: 75px;
   padding: 20px;

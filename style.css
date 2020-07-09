@@ -19,6 +19,7 @@ body {
 main {
   display: block;
   background: #f9f9f9;
+  min-height: calc(100vh - 75px);
 }
 
 .main-header__measure {
@@ -151,6 +152,11 @@ main {
 
 .tribute-info__milestone {
   margin: 16px 0;
+  font-size: 1.1rem;
+}
+
+.tribute-info__milestone a {
+  color: #143441;
   font-size: 1.1rem;
 }
 
